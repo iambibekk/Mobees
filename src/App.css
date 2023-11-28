@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.app {
+  background-color: black;
+  color: white;
+}
+button {
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+.moviesRow {
+  margin: 25px;
+}
+.moviesRow__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.moviesRow__heading > a {
+  color: white;
+  text-decoration: underline;
+  margin-right: 2vw;
+  transition: 300ms ease-in;
+}
+.moviesRow__heading > a:hover {
+  color: red;
+}
+.row__movies {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+}
+
+@media only screen and (max-width: 1130px) {
+  .row__movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    place-items: center;
+  }
+  .moviesRow {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .moviesRow {
+    margin: 0;
+  }
+}
